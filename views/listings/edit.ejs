@@ -1,0 +1,63 @@
+<% layout("/layouts/boilerplates")-%>
+
+<body>
+
+    <div class="row">
+        <div class="col-8 offset-2">
+    <form method="POST" action="/listings/<%= listing._id%>?_method=PUT" class="needs-validation" novalidate>
+        
+        <div class="mb-3">
+            <label for="title" class="form-label">title</label>
+
+            <input  value="<%= listing.title%>" name="listing[title]" type="text" class="form-control" required><br>
+            
+        </div>
+
+
+       <div class="mb-3">
+        <label for="description" class="form-label">description</label>
+
+        <textarea name="listing[description]" type="text" class="form-control" required><%= listing.description%></textarea><br>
+       
+        </div>
+        <div class="mb-3">
+            <label for="image" class="form-label">image link</label>
+
+            <input  value="<%= listing.image%>" name="listing[image]" type="text" class="form-control" required ><br>
+
+        </div>
+          <div class="mb-3"> 
+            <label for="price" class="form-label">price</label>
+
+            <input  value="<%= listing.price%>" name="listing[price]" type="number" class="form-control" required><br>
+
+          </div>
+
+          <div class="row">
+
+            <div class="mb-3 col-md-4"> 
+                <label for="location" class="form-label">location</label>
+    
+                <input  value="<%= listing.location%>" name="listing[location]" type="text" class="form-control" required><br>
+    
+             </div>
+    
+             <div class="mb-3 col-md-8">
+                <label for="country" class="form-label">country</label>
+    
+                <input  value="<%= listing.country%>" name="listing[country]" type="text" class="form-control" required><br>
+    
+             </div>
+          </div>
+
+         
+
+ 
+        <button class="btn btn-drk add-btn">submit</button>
+
+
+    </form>
+</div>
+</div>
+</body>
+ 

@@ -1,0 +1,93 @@
+body{
+     font-family: "Plus Jakarta Sans", serif!important; 
+     display:flex;
+     flex-direction: column;
+     min-height:100vh;
+}
+.container{
+    flex:1;
+}
+ 
+.card{
+    width:90%!important;
+ 
+}
+
+.navbar{
+    height:5rem;
+}
+
+.airbnb{
+    color:rgb(235, 61, 61);
+    font-size:3rem;
+    margin-left:1rem;
+}
+.nav-link{
+    color:black !important;
+}
+.link a{
+    text-decoration: none;
+    color:black;
+}
+.f-info{
+    display:flex;
+    height:8rem;
+    background-color:#ebebeb ;
+      flex-wrap: wrap; 
+      justify-content: center;
+       align-items:center; 
+       text-align: center;
+}
+.social{
+    width:100%;
+    font-size: 1.2rem;
+}
+.link{
+    width:100%;
+}
+.social i{
+    margin-left: 1rem;
+}
+
+/* cards */
+
+.listing-card{
+    border: none !important;
+    margin-bottom:2rem; 
+    border-radius:3rem solid black!important;
+ 
+    
+}
+.card-img-top{
+    border-radius:1.5rem !important;
+    height:40vh!important;
+     object-fit: cover!important;
+}
+
+.card-body{
+    padding: 0 !important;
+ }
+.card-text p{
+font-weight:bold!important;
+}
+.listing-link{
+    text-decoration:none;
+}
+
+/* card effect */
+.card-img-overlay{
+    opacity:0;
+}
+
+.card-img-overlay:hover{
+opacity: 0.2;
+background-color: white;
+}
+
+.add-btn{
+   background-color:rgb(235, 61, 61)!important;
+   color: white !important;
+}
+
+ 
+
